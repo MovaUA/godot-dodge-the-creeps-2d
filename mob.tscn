@@ -1,15 +1,28 @@
-[gd_scene load_steps=10 format=3 uid="uid://cv3w1pvemsufa"]
+[gd_scene load_steps=12 format=3 uid="uid://cv3w1pvemsufa"]
 
 [ext_resource type="Texture2D" uid="uid://b00opp2w3wv2g" path="res://art/enemyFlyingAlt_1.png" id="1_k48pu"]
 [ext_resource type="Script" path="res://mob.gd" id="1_nrv84"]
+[ext_resource type="Texture2D" uid="uid://ys288tbagqnx" path="res://art/enemyBurcus_1.png" id="2_26eyw"]
 [ext_resource type="Texture2D" uid="uid://dy4va5c8d8l1t" path="res://art/enemyFlyingAlt_2.png" id="2_gd8sy"]
 [ext_resource type="Texture2D" uid="uid://c124ae7tr4bn4" path="res://art/enemySwimming_1.png" id="3_2obgx"]
+[ext_resource type="Texture2D" uid="uid://ddub1cc24gi7v" path="res://art/enemyBurcus_2.png" id="3_sfwnv"]
 [ext_resource type="Texture2D" uid="uid://ly4iyba2qs1s" path="res://art/enemySwimming_2.png" id="4_4lwr6"]
 [ext_resource type="Texture2D" uid="uid://omhn412iouyu" path="res://art/enemyWalking_1.png" id="5_nmkdx"]
 [ext_resource type="Texture2D" uid="uid://7aju4u4hgl71" path="res://art/enemyWalking_2.png" id="6_u6415"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dst06"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_26eyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sfwnv")
+}],
+"loop": true,
+"name": &"burcus",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_k48pu")
@@ -57,7 +70,8 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_dst06")
-animation = &"walk"
+animation = &"burcus"
+frame_progress = 0.653257
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
