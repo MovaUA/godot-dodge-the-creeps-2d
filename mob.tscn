@@ -71,7 +71,7 @@ metadata/_edit_group_ = true
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_dst06")
 animation = &"burcus"
-frame_progress = 0.653257
+frame_progress = 0.567529
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
